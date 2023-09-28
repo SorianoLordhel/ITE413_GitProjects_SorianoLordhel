@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    /* Define the animation keyframes */
+    @keyframes textColorChange {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: red;
+    }
+    100% {
+        color: green;
+    }
+    }
+
+    /* Apply the animation to an element with a class name 'animated-text' */
+    .animated-text {
+    font-size: 100px;
+    animation: textColorChange 3s infinite; /* Use the animation and loop it infinitely */
+    margin: 300px;
+    }
+
+</style>
 <body>
-    <h1>hello activity1.1</h1> 
+    <center><h1 class="animated-text">Hello Activity2</h1></center>
 </body>
 </html>
